@@ -1,0 +1,105 @@
+
+
+.PHANTOMJS_EXECUTABLE
+/Users/franklin/CI/phantomjs-1.9.7-macosx/bin/phantomjs
+
+
+// 处理测试结果 因为这是一个正常的测试过程执行的最后一步 放在这里很合适
+// 不过也许它可以接受一个参数 就更好了
+//               这个方法不会在casperjs test时调用 可以在casperjs xxr.js 时调用生成结果报告
+// this.test.renderResults(true, 0, this._result_cap_str + 'test-results.xml');
+
+//	casperjs 必须有退出状态码 否则teamcity报错
+test.done();
+casper.exit(0);
+
+
+
+//	未登录 国内 单程
+
+somepath/somepath/casper.js test \
+--includes=/Users/franklin/CI/GitHub/UIAutoNav/CommFunc/common1.js,/Users/franklin/CI/GitHub/UIAutoNav/MainPage/wo_xie/goto_woxie.js,/Users/franklin/CI/GitHub/UIAutoNav/CommFunc/alert_error/pata_process.js,/Users/franklin/CI/GitHub/UIAutoNav/LogIn/Logout/logout1.js,/Users/franklin/CI/GitHub/UIAutoNav/FlightCheck/inLand/flightcheck1.js,/Users/franklin/CI/GitHub/UIAutoNav/inLand/FlightList/flightlist1.js,/Users/franklin/CI/GitHub/UIAutoNav/inLand/BillEdit_Logout/elementcheck.js,/Users/franklin/CI/GitHub/UIAutoNav/inLand/BillEdit_Logout/PsgrFill/out_fill_passenger.js,/Users/franklin/CI/GitHub/UIAutoNav/inLand/BillEdit_Logout/OtherInfo/phone_fill.js,/Users/franklin/CI/GitHub/UIAutoNav/inLand/XiaYiBu/XiaYiBu.js,/Users/franklin/CI/GitHub/UIAutoNav/Pay/Pay_Logout/out_pay_action.js,/Users/franklin/CI/GitHub/UIAutoNav/CommFunc/Result_Shoot.js \
+/Users/franklin/CI/GitHub/UIAutoNav/TestCase/inLand/testcase02.js --xunit=build002_result.xml
+
+
+--includes=CommFunc/common1.js,MainPage/wo_xie/goto_woxie.js,CommFunc/alert_error/pata_process.js,LogIn/Logout/logout1.js,FlightCheck/inLand/flightcheck1.js,inLand/FlightList/flightlist1.js,inLand/BillEdit_Logout/elementcheck.js,inLand/BillEdit_Logout/PsgrFill/out_fill_passenger.js,inLand/BillEdit_Logout/OtherInfo/phone_fill.js,inLand/XiaYiBu/XiaYiBu.js,Pay/Pay_Logout/out_pay_action.js,CommFunc/Result_Shoot.js TestCase/inLand/testcase02.js --xunit=build002_result.xml
+
+
+/Users/franklin/CI/GitHub/UIAutoNav/CommFunc/common1.js,
+/Users/franklin/CI/GitHub/UIAutoNav/MainPage/wo_xie/goto_woxie.js,
+/Users/franklin/CI/GitHub/UIAutoNav/CommFunc/alert_error/pata_process.js,
+/Users/franklin/CI/GitHub/UIAutoNav/LogIn/Logout/logout1.js,
+/Users/franklin/CI/GitHub/UIAutoNav/FlightCheck/inLand/flightcheck1.js,
+/Users/franklin/CI/GitHub/UIAutoNav/inLand/FlightList/flightlist1.js,
+/Users/franklin/CI/GitHub/UIAutoNav/inLand/BillEdit_Logout/elementcheck.js,
+/Users/franklin/CI/GitHub/UIAutoNav/inLand/BillEdit_Logout/PsgrFill/out_fill_passenger.js,
+/Users/franklin/CI/GitHub/UIAutoNav/inLand/BillEdit_Logout/OtherInfo/phone_fill.js,
+/Users/franklin/CI/GitHub/UIAutoNav/inLand/XiaYiBu/XiaYiBu.js,
+/Users/franklin/CI/GitHub/UIAutoNav/Pay/Pay_Logout/out_pay_action.js,
+/Users/franklin/CI/GitHub/UIAutoNav/Pay/PayElementsCheck.js,
+/Users/franklin/CI/GitHub/UIAutoNav/Pay/PayActions.js,
+/Users/franklin/CI/GitHub/UIAutoNav/CommFunc/Result_Shoot.js 
+
+
+/*  未登录 国内 单程 还没有设置OK  */
+
+--includes=CommFunc/common1.js,MainPage/wo_xie/goto_woxie.js,CommFunc/alert_error/pata_process.js,LogIn/Logout/logout1.js,FlightCheck/inLand/flightcheck1.js,inLand/FlightList/flightlist1.js,inLand/BillEdit_Logout/elementcheck.js,inLand/BillEdit_Logout/PsgrFill/out_fill_passenger.js,inLand/BillEdit_Logout/OtherInfo/phone_fill.js,inLand/XiaYiBu/XiaYiBu.js,Pay/Pay_Logout/out_pay_action.js,CommFunc/Result_Shoot.js TestCase/inLand/testcase02.js --xunit=build002_result.xml
+
+
+/*  扩展实现支付功能后，增加了2个文件  */
+
+casperjs test --includes=CommFunc/common1.js,MainPage/wo_xie/goto_woxie.js,CommFunc/alert_error/pata_process.js,LogIn/Logout/logout1.js,FlightCheck/inLand/flightcheck1.js,inLand/FlightList/flightlist1.js,inLand/BillEdit_Logout/elementcheck.js,inLand/BillEdit_Logout/PsgrFill/out_fill_passenger.js,inLand/BillEdit_Logout/OtherInfo/phone_fill.js,inLand/XiaYiBu/XiaYiBu.js,Pay/Pay_Logout/out_pay_action.js,Pay/PayActions.js,Pay/PayElementsCheck.js,CommFunc/Result_Shoot.js TestCase/inLand/testcase02c.js --xunit=build002c_result.xml
+
+
+/* testcase4 */
+test --includes=CommFunc/common1.js,MainPage/wo_xie/goto_woxie.js,CommFunc/alert_error/pata_process.js,LogIn/Logout/logout1.js,FlightCheck/CheckActions.js,FlightCheck/inLand/flightcheck2.js,inLand/FlightList/flightlist1.js,inLand/BillEdit_Logout/billElementcheck.js,inLand/BillEdit_Logout/PsgrFill/out_fill_passenger.js,inLand/BillEdit_Logout/OtherInfo/phone_fill.js,inLand/XiaYiBu/XiaYiBu.js,Pay/Pay_Logout/out_pay_action.js,Pay/PayActions.js,Pay/PayElementsCheck.js,CommFunc/Result_Shoot.js TestCase/inLand/testcase04.js --xunit=build004_result.xml
+
+casper.then(_D_A_T_Flt_Check2).then(_Choose_O_Flt);
+casper.then(_out_Check_Bill_Elements).then(_out_Fill_Passenger).then(_Fill_Other_Info).then(_Bill_Fill_Edit_next);
+casper.then(_out_Pay_with_Money).then(_Result_Shoot);
+
+
+/* 国内 往返*/
+/* testcaseDOUBLE4 */
+test --includes=CommFunc/common1.js,MainPage/wo_xie/goto_woxie.js,CommFunc/alert_error/pata_process.js,LogIn/Logout/logout1.js,FlightCheck/CheckActions.js,FlightCheck/inLand/flightDoublecheck2.js,inLand/FlightList/flightDoublelist1.js,inLand/BillEdit_Logout/billElementcheck.js,inLand/BillEdit_Logout/PsgrFill/out_fill_passenger.js,inLand/BillEdit_Logout/OtherInfo/phone_fill.js,inLand/XiaYiBu/XiaYiBu.js,Pay/Pay_Logout/out_pay_action.js,Pay/PayActions.js,Pay/PayElementsCheck.js,CommFunc/Result_Shoot.js TestCase/inLand/testcaseDouble04.js --xunit=build00DOUBLE4_result.xml
+
+
+casper.start("http://m.ctrip.com/", function() {
+	  this.capture(this._result_cap_str + _TimeStamp() + ".png");
+}).then(function(){_TEST_double_T.call(this, 'SHA', 'CAN', '2014-10-17', '2014-10-23')});
+casper.then(_D_A_T_Double_Flt_Check).then(_Choose_Double_Flt);
+casper.then(_out_Check_Bill_Elements).then(_out_Fill_Passenger).then(_Fill_Other_Info).then(_Bill_Fill_Edit_next);
+casper.then(_out_Pay_with_Money).then(_Result_Shoot);
+
+
+
+/*  未登录 国内 单程 */
+/* testcase5 */
+test --includes=TestCase/TestcaseOptions.js,CommFunc/common1.js,MainPage/wo_xie/goto_woxie.js,CommFunc/alert_error/pata_process.js,LogIn/Logout/logout1.js,FlightCheck/CheckActions.js,FlightCheck/inLand/flightcheck2.js,inLand/beforeBillEdit.js,inLand/FlightList/FlightListActions.js,inLand/FlightList/flightlist3.js,inLand/BillEdit_Logout/billElementcheck.js,inLand/BillEdit_Logout/PsgrFill/out_fill_passenger.js,inLand/BillEdit_Logout/OtherInfo/phone_fill.js,inLand/XiaYiBu/XiaYiBu.js,Pay/Pay_Logout/out_pay_action.js,Pay/PayActions_new.js,Pay/PayElementsCheck.js,CommFunc/Result_Shoot.js TestCase/inLand/testcase05.js --xunit=build005_result.xml
+
+casper.start("http://m.ctrip.com/");
+casper.then(_CaseOption);
+casper.then(function(){_TEST_T.call(this, 'BJS', 'SIA', '2014-10-12')});
+casper.then(_GoTo_WoXie).then(_LOGINOUT);
+casper.then(_D_A_T_Flt_Check2).then(_Choose_O_Flt);
+casper.then(_out_Check_Bill_Elements).then(_out_Fill_Passenger).then(_Fill_Other_Info).then(_Bill_Fill_Edit_next);
+casper.then(_out_Pay_with_Money).then(_Result_Shoot);
+
+
+
+/*  未登录 国内 单程 */
+/* testcase7 */
+test --includes=TestCase/TestcaseOptions2.js,CommFunc/common1.js,MainPage/wo_xie/goto_woxie.js,CommFunc/alert_error/pata_process.js,LogIn/Logout/logout1.js,FlightCheck/CheckActions.js,FlightCheck/inLand/flightcheck2.js,inLand/beforeBillEdit.js,inLand/FlightList/FlightListActions.js,inLand/FlightList/flightlist3.js,inLand/BillEdit_Logout/billElementcheck.js,inLand/BillEdit_Logout/PsgrFill/out_fill_passenger.js,inLand/BillEdit_Logout/OtherInfo/phone_fill.js,inLand/XiaYiBu/XiaYiBu.js,Pay/Pay_Logout/out_pay_action.js,Pay/PayActions_new.js,Pay/PayElementsCheck.js,CommFunc/Result_Shoot.js TestCase/inLand/testcase07.js --xunit=build007_result.xml
+
+casper.start("http://m.ctrip.com/");
+casper.then(_CaseOption2);
+casper.then(function(){_TEST_T.call(this, 'BJS', 'SIA', '2014-10-12')});
+casper.then(_GoTo_WoXie).then(_LOGINOUT);
+casper.then(_D_A_T_Flt_Check2).then(_Choose_O_Flt);
+casper.then(_out_Check_Bill_Elements).then(_out_Fill_Passenger).then(_Fill_Other_Info).then(_Bill_Fill_Edit_next);
+casper.then(_out_Pay_with_Money).then(_Result_Shoot);
+
+
+
+
+

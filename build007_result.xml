@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuites time="12.281"><testsuite name="SevenCase" tests="1" failures="1" errors="0" time="12.281" timestamp="2014-09-22T14:25:05.451Z" package="TestCase/inLand/testcase07"><testcase name="TypeError: 'undefined' is not an object (evaluating '_trace[0].file')" classname="TestCase/inLand/testcase07" time="12.281"><error type="error">TypeError: 'undefined' is not an object (evaluating '_trace[0].file')
+    at /Users/whyang/CI/teamcity/TeamCity/buildAgent/work/db01116bd36a248a/TestCase/TestcaseOptions.js:441
+    at emit (/Users/whyang/casperJS/casperjs-4f105a9/modules/events.js:83)
+    at onError (/Users/whyang/casperJS/casperjs-4f105a9/modules/casper.js:2455)
+    at phantomjs://bootstrap.js:58</error><failure type="uncaughtError">TypeError: 'undefined' is not an object (evaluating '_trace[0].file')</failure></testcase><system-out></system-out></testsuite></testsuites>

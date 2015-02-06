@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuites time="4.147"><testsuite name="EightCase" tests="1" failures="1" errors="0" time="4.147" timestamp="2014-09-29T05:40:02.735Z" package="TestCase/inLand/testcase08"><testcase name="ReferenceError: Can't find variable: out_Check_Bill_Elements" classname="TestCase/inLand/testcase08" time="4.147"><error type="error">ReferenceError: Can't find variable: out_Check_Bill_Elements
+    at TestCase/inLand/testcase08.js:59
+    at /Users/whyang/casperJS/casperjs-4f105a9/modules/tester.js:1064
+    at /Users/whyang/casperJS/casperjs-4f105a9/bin/bootstrap.js:60
+    at begin (/Users/whyang/casperJS/casperjs-4f105a9/modules/tester.js:1093)
+    at TestCase/inLand/testcase08.js:75</error><failure type="uncaughtError">ReferenceError: Can't find variable: out_Check_Bill_Elements</failure></testcase><system-out></system-out></testsuite></testsuites>

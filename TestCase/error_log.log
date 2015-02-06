@@ -1,0 +1,20 @@
+[19:08:00][Step 1/1]  [32;1m[debug] [0m [phantom] Mouse event 'mousedown' on selector: .js_flight_seat[data-parent-key="6"][data-key="1"] .xq_price
+[19:08:00][Step 1/1]  [32;1m[debug] [0m [phantom] Mouse event 'mouseup' on selector: .js_flight_seat[data-parent-key="6"][data-key="1"] .xq_price
+[19:08:00][Step 1/1]  [32;1m[debug] [0m [phantom] Mouse event 'click' on selector: .js_flight_seat[data-parent-key="6"][data-key="1"] .xq_price
+[19:08:00][Step 1/1]  [32;1m[debug] [0m [phantom] Navigation requested: url=http://m.ctrip.com/webapp/flight/#bookinginfo, type=Other, willNavigate=true, isMainFrame=true
+[19:08:00][Step 1/1]  [32;1m[debug] [0m [phantom] url changed to "http://m.ctrip.com/webapp/flight/#bookinginfo"
+[19:08:00][Step 1/1]  [36m[info] [0m [phantom] Step anonymous 58/66: done in 38925ms.
+[19:08:00][Step 1/1]  [36m[info] [0m [phantom] Step _step 59/66 http://m.ctrip.com/webapp/flight/#bookinginfo (HTTP 200)
+[19:08:00][Step 1/1]  [36m[info] [0m [phantom] Step _step 59/66: done in 38927ms.
+[19:08:00][Step 1/1]  [37;41;1mFAIL [0m RangeError: Maximum call stack size exceeded.
+[19:08:00][Step 1/1]  [33m#    type: uncaughtError [0m
+[19:08:00][Step 1/1]  [33m#    file: TestCase/inLand/testcase05.js:558 [0m
+[19:08:00][Step 1/1]  [33m#    error: Maximum call stack size exceeded.
+[19:08:00][Step 1/1] #           RangeError: Maximum call stack size exceeded.
+[19:08:00][Step 1/1] #               at isType (/Users/franklin/CI/casperjs-master/modules/utils.js:558)
+[19:08:00][Step 1/1] #               at isFunction (/Users/franklin/CI/casperjs-master/modules/utils.js:443)
+[19:08:00][Step 1/1] #               at log (/Users/franklin/CI/casperjs-master/modules/casper.js:1310)
+[19:08:00][Step 1/1] #               at /Users/franklin/CI/TeamCity/buildAgent/work/f771cf0787eb23c0/TestCase/TestcaseOptions.js:27
+[19:08:00][Step 1/1] #               at log (/Users/franklin/CI/casperjs-master/modules/casper.js:1311)
+[19:08:00][Step 1/1] #               at /Users/franklin/CI/TeamCity/buildAgent/work/f771cf0787eb23c0/TestCase/TestcaseOptions.js:27
+[19:08:00][Step 1/1] #               at log (/Users/franklin/CI/casperjs-master/modules/casper.js:1311)
